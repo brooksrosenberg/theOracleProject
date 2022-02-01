@@ -9,13 +9,10 @@
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="assets/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>Learn Your Birthday!</title>
-    <script>
-        $( function() {
-          $( "#datepicker" ).datepicker();
-        } );
-        </script>
+
 </head>
 
 <!-- jumbotron -->
@@ -30,12 +27,38 @@
 <!-- end of jumbotron -->
 
 <body>
-    <!-- datepicker --><aside id="datepicker" class="datePickClass">
-    <nav>
-        <p>Date: <input type="text" id="datepicker"></p>    
-    </nav>       
-</aside>
-   
+    <!-- datepicker -->
+    <aside id="datepicker" class="datePickClass">
+        <nav>
+            <script>
+                $(function () {
+                    $("#datepicker").datepicker();
+                });
+            </script>
+            <p>Date: <input type="text" id="datepicker"></p>
+        </nav>
+    </aside>
+<!-- data card -->
+    <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+        </div>
+    </div>
+    <!-- end of data card -->
+
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
