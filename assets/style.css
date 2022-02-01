@@ -1,5 +1,4 @@
-.card{
-    width: 75%;
-    align-content: flex-end;
-
+.card {
+  display: flex;
+  justify-content: center;
 }
