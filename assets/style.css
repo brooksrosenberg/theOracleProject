@@ -1,5 +1,17 @@
 .card{
     width: 75%;
-    align-content: flex-end;
+    display: flex;
+    justify-content: right;
+
+}
+
+.the-body{
+    display: flex;
+}
+
+header{
+    display: flex;
+    justify-content: baseline;
+    width: 100%;
 
 }
