@@ -11,11 +11,15 @@
     <link rel="stylesheet" href="assets/style.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-    <script>
+    <!-- <script>
         $(function () {
-            $("#datepicker").datepicker();
+            $('.datepicker').datepicker()
+    .on("changeDate", function(e) {
+        // `e` here contains the extra attributes
+        console.log("lorem");
+    });
         });
-    </script>
+    </script> -->
 </head>
 <!-- jumbotron -->
 <header>
@@ -31,12 +35,22 @@
 </header>
 <!-- end of jumbotron -->
 
-<div class="container">
+<label for="start">Start date:</label>
+<input
+  type="date"
+  id="start"
+  name="trip-start"
+  value="2018-07-22"
+  min="1922-01-01"
+  max="2022-12-31"
+/>
+
+<!-- <div class="container">
     <div class="row">
         <!-- datepicker -->
-      <div class="col-4">
-        <p>Date: <input type="text" id="datepicker"></p>
-    </div>
+      <!-- <div class="col-4">
+        <p>Date: <input type="text" id="datepicker" class="inputValue"></p>
+    </div> --> -->
 <!-- card -->
       <div class="col-8">
         <img src="#" class="card-img-top" alt="...">
