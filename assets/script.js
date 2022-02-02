@@ -1,72 +1,67 @@
 var input = document.querySelector("#start");
-
-console.log(input);
-
-
-input.addEventListener('change', function () {
+var Btn = document.querySelector(".button");
     
-    fetch("https://horoscopeapi-horoscope-v1.p.rapidapi.com/daily?date=today", {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "horoscopeapi-horoscope-v1.p.rapidapi.com",
-		"x-rapidapi-key": "b8b3941824msh99ac9bf94bf5049p11d616jsnb3a99dcc21ad"
-	}
-})
-.then(response => {
-	console.log(response);
-})
-.catch(err => {
-	console.error(err);
-});
+    console.log(input);
 
-    // fetch("https://history-events-of-a-day.p.rapidapi.com/api/getevents/june/28", {
-    //     "method": "GET",
-    //     "headers": {
-    //         "x-rapidapi-host": "history-events-of-a-day.p.rapidapi.com",
-    //         "x-rapidapi-key": "b8b3941824msh99ac9bf94bf5049p11d616jsnb3a99dcc21ad"
-    //     }
-    // })
-    // .then(response => {
-    //     console.log(response);
-    // })
-    // .catch(err => {
-    //     console.error(err);
-    // });
-
-//     fetch('https://history-events-of-a-day.p.rapidapi.com/api/getevents?q='+input.value+'&appid=23498756d1msh8f2c810f2e947a2p133e8ejsn204782b3f173')
-	
+//     Btn.addEventListener('click', function () {
+// fetch("https://tic-tac-toe-ai.p.rapidapi.com/move", {
+// 	"method": "POST",
+// 	"headers": {
+// 		"content-type": "application/x-www-form-urlencoded",
+// 		"x-rapidapi-host": "tic-tac-toe-ai.p.rapidapi.com",
+// 		"x-rapidapi-key": "23498756d1msh8f2c810f2e947a2p133e8ejsn204782b3f173"
+// 	},
+// 	"body": {
+// 		"player": "X",
+// 		"0-0": "X",
+// 		"0-1": "X",
+// 		"0-2": "O",
+// 		"1-0": "O",
+// 		"1-1": "O",
+// 		"1-2": "X",
+// 		"2-0": "X",
+// 		"2-1": "O"
+// 	}
+// })
 // .then(response => {
 // 	console.log(response);
 // })
 // .catch(err => {
 // 	console.error(err);
 // });
+//     });
+// horoscope gen
+input.addEventListener('change', function () {
+
+    fetch("https://horoscopeapi-horoscope-v1.p.rapidapi.com/daily?date=today", {
+        "method": "GET",
+        "headers": {
+            "x-rapidapi-host": "horoscopeapi-horoscope-v1.p.rapidapi.com",
+            "x-rapidapi-key": "23498756d1msh8f2c810f2e947a2p133e8ejsn204782b3f173"
+        }
+    })
+        .then(response => {
+            console.log(response.json());
+        })
+        .catch(err => {
+            console.error(err);
+        });
+
 });
 
+// birthday cake gen
 
-// "method": "POST",
-// 	"headers": {
-// 		"content-type": "application/json",
-// 		"x-rapidapi-host": "history-events-of-a-day.p.rapidapi.com",
-// 		"x-rapidapi-key": "b8b3941824msh99ac9bf94bf5049p11d616jsnb3a99dcc21ad"
-// 	},
-// 	"body": {
-// 		"month": "june",
-// 		"day": "28"
+Btn.addEventListener('click', function () {
+    fetch("https://birthday-cake-with-name-generator.p.rapidapi.comendpoint/", {
+        "method": "GET",
+        "headers": {
+            "x-rapidapi-host": "birthday-cake-with-name-generator.p.rapidapi.com",
+            "x-rapidapi-key": "23498756d1msh8f2c810f2e947a2p133e8ejsn204782b3f173"
+        }
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
 
+    .catch(error => alert('City Name Does Not Exist'))
+});
 
-
-
-// fetch("https://birthday-cake-with-name-generator.p.rapidapi.comendpoint/", {
-//         "method": "GET",
-//         "headers": {
-//             "x-rapidapi-host": "birthday-cake-with-name-generator.p.rapidapi.com",
-//             "x-rapidapi-key": "b8b3941824msh99ac9bf94bf5049p11d616jsnb3a99dcc21ad"
-//         }
-//     })
-//     .then(response => {
-//         console.log(response);
-//     })
-//     .catch(err => {
-//         console.error(err);
-//     });
