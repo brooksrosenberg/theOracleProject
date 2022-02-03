@@ -4,11 +4,13 @@ var horoscopeDetails = document.querySelector(".horoscopeDetails");
 var inputValue = document.querySelector(".inputValue");
 var color = document.querySelector('.color')
 var sign = document.querySelector('.sign')
-var facts = document.querySelector('facts')
-var luckyNumber = document.querySelector('luckyNumber')
-var luckyTime = document.querySelector('luckyTime')
-var moood = document.querySelector('mood')
+var facts = document.querySelector('.facts')
+var luckyNumber = document.querySelector('.luckyNumber')
+var luckyTime = document.querySelector('.luckyTime')
+var mood = document.querySelector('.mood')
 console.log(input);
+
+var randomfact = document.querySelector('.randomfact')
 
 //     Btn.addEventListener('click', function () {
 
@@ -25,6 +27,7 @@ input.addEventListener('change', function () {
          .then(response =>response.json()) 
              // var horoscopeValue = innerHTML
         .then(data => {
+            console.log(data)
             var redValue = data['color']
             var signValue = data['compatibility']
             var faqValue = data['description']
@@ -33,10 +36,10 @@ input.addEventListener('change', function () {
             var mooodValue = data['mood']
 
             color.innerHTML = redValue;
-            compatibility.innerHTML =signValue;
-            description.innerHTML =faqValue;
-            lucky_number.innerHTML =lucknValue;
-            lucky_time.innerHTML= lucktValue;
+            sign.innerHTML =signValue;
+            facts.innerHTML =faqValue;
+            luckyNumber.innerHTML =lucknValue;
+            luckyTime.innerHTML= lucktValue;
             mood.innerHTML= mooodValue
 
 
@@ -47,31 +50,24 @@ input.addEventListener('change', function () {
 
     // fun fact gen
     
-});
-    Btn.addEventListener('click', function () {
-
-        fetch("https://baby-names-finder.p.rapidapi.com/detail/"+inputValue.value, {
+ });
+Btn.addEventListener('click', function () {    
+fetch("https://random-facts2.p.rapidapi.com/getfact", {
 	"method": "GET",
 	"headers": {
-		"x-rapidapi-host": "baby-names-finder.p.rapidapi.com",
+		"x-rapidapi-host": "random-facts2.p.rapidapi.com",
 		"x-rapidapi-key": "23498756d1msh8f2c810f2e947a2p133e8ejsn204782b3f173"
 	}
 })
 .then(response => {
-	console.log(response.json());
+	return response.json()
 })
-.catch(err => {
-	console.error(err);
-});
-            // fetch("https://ffa.aakhilv.me/json", {
-            //     "method": "GET",
-            // })
-            //     .then(response => {
-            //         console.log(response.json());
-            //     })
-            //     .catch(err => {
-            //         console.error(err)
-            //     });
-        })
-    
+.then(data => {
+        console.log(data)
+        var randomfactValue = data['Fact']
+        console.log(data['Fact'])
 
+        randomfact.innerHTML = randomfactValue;
+     })
+    
+});
