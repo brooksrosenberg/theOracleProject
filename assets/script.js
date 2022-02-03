@@ -33,19 +33,33 @@ var Btn = document.querySelector(".button");
 // horoscope gen
 input.addEventListener('change', function () {
 
-    fetch("https://horoscopeapi-horoscope-v1.p.rapidapi.com/daily?date=today", {
-        "method": "GET",
-        "headers": {
-            "x-rapidapi-host": "horoscopeapi-horoscope-v1.p.rapidapi.com",
-            "x-rapidapi-key": "23498756d1msh8f2c810f2e947a2p133e8ejsn204782b3f173"
-        }
-    })
-        .then(response => {
-            console.log(response.json());
-        })
-        .catch(err => {
-            console.error(err);
-        });
+    fetch("https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=aquarius&day=today", {
+	"method": "POST",
+	"headers": {
+		"x-rapidapi-host": "sameer-kumar-aztro-v1.p.rapidapi.com",
+		"x-rapidapi-key": "23498756d1msh8f2c810f2e947a2p133e8ejsn204782b3f173"
+	}
+})
+.then(response => {
+	console.log(response);
+})
+.catch(err => {
+	console.error(err);
+});
+
+    // fetch("https://horoscopeapi-horoscope-v1.p.rapidapi.com/daily?date=today", {
+    //     "method": "GET",
+    //     "headers": {
+    //         "x-rapidapi-host": "horoscopeapi-horoscope-v1.p.rapidapi.com",
+    //         "x-rapidapi-key": "23498756d1msh8f2c810f2e947a2p133e8ejsn204782b3f173"
+    //     }
+    // })
+    //     .then(response => {
+    //         console.log(response.json());
+    //     })
+    //     .catch(err => {
+    //         console.error(err);
+    //     });
 
 });
 
