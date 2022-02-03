@@ -4,10 +4,10 @@ var horoscopeDetails = document.querySelector(".horoscopeDetails");
 var inputValue = document.querySelector(".inputValue");
 var color = document.querySelector('.color')
 var sign = document.querySelector('.sign')
-var facts = document.querySelector('facts')
-var luckyNumber = document.querySelector('luckyNumber')
-var luckyTime = document.querySelector('luckyTime')
-var moood = document.querySelector('mood')
+var facts = document.querySelector('.facts')
+var luckyNumber = document.querySelector('.luckyNumber')
+var luckyTime = document.querySelector('.luckyTime')
+var mood = document.querySelector('.mood')
 console.log(input);
 
 //     Btn.addEventListener('click', function () {
@@ -33,10 +33,10 @@ input.addEventListener('change', function () {
             var mooodValue = data['mood']
 
             color.innerHTML = redValue;
-            compatibility.innerHTML =signValue;
-            description.innerHTML =faqValue;
-            lucky_number.innerHTML =lucknValue;
-            lucky_time.innerHTML= lucktValue;
+            sign.innerHTML =signValue;
+            facts.innerHTML =faqValue;
+            luckyNumber.innerHTML =lucknValue;
+            luckyTime.innerHTML= lucktValue;
             mood.innerHTML= mooodValue
 
 
