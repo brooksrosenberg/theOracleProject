@@ -32,12 +32,9 @@ var Btn = document.querySelector(".button");
 //     });
 // horoscope gen aztro
 input.addEventListener('change', function () {
-    fetch("https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=aquarius&day=today", {
-        "method": "POST",
-        "headers": {
-            "x-rapidapi-host": "sameer-kumar-aztro-v1.p.rapidapi.com",
-            "x-rapidapi-key": "23498756d1msh8f2c810f2e947a2p133e8ejsn204782b3f173"
-        }
+    fetch("https://ffa.aakhilv.me/json", {
+        "method": "GET",
+        
     })
     .then(response => {
         console.log(response.json());
