@@ -9,9 +9,12 @@ console.log(input);
 
 // horoscope gen aztro
 input.addEventListener('change', function () {
-    fetch("https://ffa.aakhilv.me/json", {
-        "method": "GET",
-        
+    fetch("https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=aquarius&day=today", {
+        "method": "POST",
+        "headers": {
+            "x-rapidapi-host": "sameer-kumar-aztro-v1.p.rapidapi.com",
+            "x-rapidapi-key": "23498756d1msh8f2c810f2e947a2p133e8ejsn204782b3f173"
+        }
     })
         .then(response => {
             console.log(response.json());
@@ -37,8 +40,3 @@ input.addEventListener('change', function () {
         })
     })
 
-<<<<<<< HEAD
-    .catch(error => alert('City Name Does Not Exist'))
-});})
-=======
->>>>>>> f1e49f84bb7e3d3011e3ca6603f7e35203d25cff
