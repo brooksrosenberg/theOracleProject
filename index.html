@@ -11,35 +11,57 @@
     <link rel="stylesheet" href="assets/style.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-    <script>
-        $(function () {
-            $("#datepicker").datepicker();
-        });
-    </script>
+   
 </head>
-<!-- jumbotron -->
+
 <header>
+    <!-- jumbotron -->
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4">Fluid jumbotron</h1>
-            <p class="lead">
-                This is a modified jumbotron that occupies the entire horizontal space
-                of its parent.
+            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.
             </p>
         </div>
     </div>
+    <!-- end of jumbotron -->
 </header>
-<!-- end of jumbotron -->
 
-<div class="container">
+
+<label for="start">Start date:</label>
+<input
+  type="date"
+  id="start"
+  name="trip-start"
+  value="2018-07-22"
+  min="1922-01-01"
+  max="2022-12-31"
+/>
+
+<!-- <div class="container">
     <div class="row">
         <!-- datepicker -->
-      <div class="col-4">
-        <p>Date: <input type="text" id="datepicker"></p>
-    </div>
+      <!-- <div class="col-4">
+        <p>Date: <input type="text" id="datepicker" class="inputValue"></p>
+    </div> --> -->
 <!-- card -->
-      <div class="col-8">
-        <img src="..." class="card-img-top" alt="...">
+    <div class="card">
+        <div class="input">
+            <input type="search" class="inputValue" placeholder="Your Name">
+            <input type="submit" value="submit" class=button>
+            <div>
+                <img src="#" class="cakeimage" alt="Birthday cake with name">
+            </div>
+        </div>
+        <div>
+            <ul class="horoscope list-group-flush">
+                <li class="list-group-item">Your Horoscope</li>
+                <li class="list-group-item">A second item</li>
+        </div>
+    </div>
+
+
+<!-- <div class="col-8">
+        <img src="#" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
@@ -56,7 +78,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
