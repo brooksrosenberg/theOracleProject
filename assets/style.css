@@ -1,18 +1,16 @@
-.card{
-    width: 75%;
-    
-    display: flex;
-    justify-content: right;
+.card {
+  width: 75%;
 
+  display: flex;
+  justify-content: right;
 }
 
-.the-body{
-    display: flex;
+.the-body {
+  display: flex;
 }
 
-header{
-    display: flex;
-    justify-content: baseline;
-    width: 100%;
-
+header {
+  display: flex;
+  justify-content: baseline;
+  width: 100%;
 }
