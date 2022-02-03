@@ -17,7 +17,7 @@ input.addEventListener('change', function () {
         }
     })
         .then(response => {
-            console.log(response.json());
+            console.log(response.json())
             // var horoscopeValue = innerHTML
         })
         .catch(err => {
@@ -28,7 +28,12 @@ input.addEventListener('change', function () {
     
 });
     Btn.addEventListener('click', function () {
-
+        fetch("https://api.adviceslip.com/advice
+      
+      
+      
+      
+      
         fetch("https://baby-names-finder.p.rapidapi.com/detail/"+inputValue.value, {
 	"method": "GET",
 	"headers": {
@@ -37,8 +42,15 @@ input.addEventListener('change', function () {
 	}
 })
 .then(response => {
-	console.log(response.json());
+	console.log(response.json())
 })
+.then(function(data){
+    var nameValue = data['name'];
+    var tempValue = data['main']['temp'];
+    var windValue = data['wind']['speed'];
+    var humidityValue = data['main']['humidity']; 
+            
+    })
 .catch(err => {
 	console.error(err);
 });
