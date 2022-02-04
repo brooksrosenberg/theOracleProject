@@ -3,17 +3,96 @@
 }
 .card {
   width: 75%;
-
   display: flex;
   justify-content: right;
 }
-
 .the-body {
   display: flex;
 }
-
 header {
-  display: flex;
-  justify-content: baseline;
   width: 100%;
 }
+.jumbotron{
+  background-image: url("shootingstar.gif");
+   background-size: cover;
+   background-repeat: no-repeat;
+   color: blueviolet;
+   text-shadow: 0 0 10px crimson;
+   border: 5px;
+   border-color: darkorchid;
+   border-style:outset;
+   box-shadow: 0 0 15px crimson;
+}
+body{
+  background-image: url("shootingstar.gif");
+      background-size: cover;
+   background-repeat: no-repeat;
+}
+.input {
+display:inline;
+}
+.button {
+  position:relative;
+  text-align:center;
+  width: 80px;
+  padding: 4px;
+  font-size: 13px;
+  color: black;
+  background-color: whitesmoke;
+  font-family:poppins;
+  border: 2px solid darkslateblue;
+  border-radius: 50px;
+  transition: 1.5s;
+}
+.button:hover {
+  color: rgb(68, 8, 8);
+  cursor:default;
+  background-color: violet;
+  box-shadow: 0 0 10px crimson;
+}
+label {
+  color:darkorchid;
+  text-shadow: 0 0 5px crimson;
+}
+#start{
+  width: 130px;
+  padding: 4px;
+  font-size: 13px;
+  color: black;
+  background-color: whitesmoke;
+  font-family:poppins;
+  border: 2px solid darkslateblue;
+  border-radius: 50px;
+  transition: 1.5s;
+}
+#start:hover{
+  color: rgb(68, 8, 8);
+  cursor:default;
+  background-color: violet;
+  box-shadow: 0 0 10px crimson;
+}
+.display-4,
+.lead,
+.color,
+ .sign,
+ .facts,
+  .luckyNumber,
+  .luckyTime,
+  .mood,
+  .randomfact
+    {
+      position: relative;
+      margin-top: 20px;
+      justify-content: flex-start;
+      color:darkorchid;
+      text-shadow:0 0 5px crimson;
+}
+
+
+
+
+
+
+
+
+
