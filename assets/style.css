@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 481daf24c4357f878097bbd65ff7fa388044f548
 .card {
   width: 75%;
   display: flex;
@@ -13,24 +17,31 @@ header {
   background-image: url("shootingstar.gif");
    background-size: cover;
    background-repeat: no-repeat;
-   color: blueviolet;
+   color:aliceblue;
    text-shadow: 0 0 10px crimson;
    border: 5px;
    border-color: darkorchid;
    border-style:outset;
    box-shadow: 0 0 15px crimson;
+   text-align: center;
 }
 body{
   background-image: url("shootingstar.gif");
       background-size: cover;
    background-repeat: no-repeat;
+   
 }
 .input {
 display:inline;
 }
 #button {
+<<<<<<< HEAD
   position:relative;
   text-align:center;
+=======
+
+  text-align: center;
+>>>>>>> 481daf24c4357f878097bbd65ff7fa388044f548
   width: 80px;
   padding: 4px;
   font-size: 13px;
@@ -45,11 +56,12 @@ display:inline;
   color: rgb(68, 8, 8);
   cursor:default;
   background-color: violet;
-  box-shadow: 0 0 10px crimson;
 }
 label {
-  color:darkorchid;
-  text-shadow: 0 0 5px crimson;
+  color:aliceblue;
+  align-items: center;
+  text-shadow: 0 0 10px crimson;
+  
 }
 #start{
   width: 130px;
@@ -61,6 +73,7 @@ label {
   border: 2px solid darkslateblue;
   border-radius: 50px;
   transition: 1.5s;
+  text-align: center;
 }
 #start:hover{
   color: rgb(68, 8, 8);
@@ -78,18 +91,23 @@ label {
   .mood,
   .randomfact
     {
-      position: relative;
       margin-top: 20px;
-      justify-content: flex-start;
-      color:darkorchid;
+      text-align: center;  
+      color:rgb(193, 190, 194);
       text-shadow:0 0 5px crimson;
 }
 
+.footer{
+  background-image: url("shootingstar.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: aliceblue;
+  text-shadow: 0 0 5px crimson;
+  padding: 35px;
+  text-align: center;
+  
+}
 
-
-
-
-
-
-
-
+/* .footerdetails{
+  color:aliceblue;
+} */ 
