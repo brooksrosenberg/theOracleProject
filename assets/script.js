@@ -2,7 +2,7 @@
 //     month) 4. var url = "http:.../sign=" + sign + "&day=today" 5. fetch(url, { )
 
 var input = document.querySelector("#start");
-var Btn = document.querySelector(".button");
+// var Btn = document.querySelector(".button");
 var horoscopeDetails = document.querySelector(".horoscopeDetails");
 var inputValue = document.querySelector(".inputValue");
 var color = document.querySelector('.color')
@@ -13,9 +13,14 @@ var luckyTime = document.querySelector('.luckyTime')
 var mood = document.querySelector('.mood')
 var x = document.getElementById("start").value;
 console.log(x)
-x.split("-")
-var day = x[2]
-var month = x[1]
+var split = x.split("-")
+var dayString = split[2];
+var day = parseInt(dayString);
+console.log(typeof day)
+var month = split[1]
+console.log(day)
+console.log(split)
+var submitBtn = document.querySelector("#button");
 // var dateRange = document.querySelector()
 
 console.log(input);
@@ -66,8 +71,115 @@ input.addEventListener('change', function () {
     // fun fact gen
     
  });
-Btn.addEventListener('click', function () {    
-fetch("https://random-facts2.p.rapidapi.com/getfact", {
+// submitBtn.addEventListener('click', function () {    
+
+// // var value = ['year']['month']['day'];
+// });
+function zodiacSign(day, month)
+    {
+        let astro_sign="";
+           
+        // checks month and date within the
+        // valid range of a specified zodiac
+        if (month == 12){
+            console.log(month);
+               
+            if (day < 22)
+            astro_sign = "Sagittarius";
+            else
+            astro_sign ="capricorn";
+        }
+               
+        else if (month == 1){
+            if (day < 20)
+            astro_sign = "Capricorn";
+            else
+            astro_sign = "aquarius";
+        }
+               
+        else if (month == 2){
+            if (day < 19)
+            astro_sign = "Aquarius";
+            else
+            astro_sign = "pisces";
+        }
+               
+        else if(month == 3){
+            if (day < 21)
+            astro_sign = "Pisces";
+            else
+            astro_sign = "aries";
+        }
+        else if (month == 4){
+            if (day < 20)
+            astro_sign = "Aries";
+            else
+            astro_sign = "taurus";
+        }
+               
+        else if (month == 5){
+            if (day < 21)
+            astro_sign = "Taurus";
+            else
+            astro_sign = "gemini";
+        }
+               
+        else if( month == 6){
+            if (day < 21)
+            astro_sign = "Gemini";
+            else
+            astro_sign = "cancer";
+        }
+               
+        else if (month == 7){
+            console.log("hello")
+            if (day < 23)
+            astro_sign = "Cancer";
+            else
+            astro_sign = "leo";
+        }
+               
+        else if( month == 8){
+            if (day < 23)
+            astro_sign = "Leo";
+            else
+            astro_sign = "virgo";
+        }
+               
+        else if (month == 9){
+            if (day < 23)
+            astro_sign = "Virgo";
+            else
+            astro_sign = "libra";
+        }
+               
+        else if (month == 10){
+            if (day < 23)
+            astro_sign = "Libra";
+            else
+            astro_sign = "scorpio";
+        }
+               
+        else if (month == 11){
+            if (day < 22)
+            astro_sign = "scorpio";
+            else
+            astro_sign = "sagittarius";
+        }
+               
+        document.write(astro_sign);
+    }
+
+    submitBtn.addEventListener("click", function(event){
+           event.preventDefault();
+        console.log("button clicked")
+        // grab value of datepicker 
+        
+        // store value into var for day and month
+        // feed those variable to zodiac function
+        // take results and give it to horoscope api
+        // put results page
+        fetch("https://random-facts2.p.rapidapi.com/getfact", {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "random-facts2.p.rapidapi.com",
@@ -81,103 +193,11 @@ fetch("https://random-facts2.p.rapidapi.com/getfact", {
         console.log(data)
         var randomfactValue = data['Fact']
         
-        console.log(value)
+        // console.log(value)
         console.log(data['Fact'])
 
         randomfact.innerHTML = randomfactValue;
      })
-var value = ['year']['month']['day'];
-});
-function zodiacSign(day, month)
-    {
-        let astro_sign="";
+        
            
-        // checks month and date within the
-        // valid range of a specified zodiac
-        if (month == Number("december")){
-            console.log(month);
-               
-            if (day < 22)
-            astro_sign = "Sagittarius";
-            else
-            astro_sign ="capricorn";
-        }
-               
-        else if (month == "january"){
-            if (day < 20)
-            astro_sign = "Capricorn";
-            else
-            astro_sign = "aquarius";
-        }
-               
-        else if (month == "february"){
-            if (day < 19)
-            astro_sign = "Aquarius";
-            else
-            astro_sign = "pisces";
-        }
-               
-        else if(month == "march"){
-            if (day < 21)
-            astro_sign = "Pisces";
-            else
-            astro_sign = "aries";
-        }
-        else if (month == "april"){
-            if (day < 20)
-            astro_sign = "Aries";
-            else
-            astro_sign = "taurus";
-        }
-               
-        else if (month == "may"){
-            if (day < 21)
-            astro_sign = "Taurus";
-            else
-            astro_sign = "gemini";
-        }
-               
-        else if( month == "june"){
-            if (day < 21)
-            astro_sign = "Gemini";
-            else
-            astro_sign = "cancer";
-        }
-               
-        else if (month == "july"){
-            if (day < 23)
-            astro_sign = "Cancer";
-            else
-            astro_sign = "leo";
-        }
-               
-        else if( month == "august"){
-            if (day < 23)
-            astro_sign = "Leo";
-            else
-            astro_sign = "virgo";
-        }
-               
-        else if (month == "september"){
-            if (day < 23)
-            astro_sign = "Virgo";
-            else
-            astro_sign = "libra";
-        }
-               
-        else if (month == "october"){
-            if (day < 23)
-            astro_sign = "Libra";
-            else
-            astro_sign = "scorpio";
-        }
-               
-        else if (month == "november"){
-            if (day < 22)
-            astro_sign = "scorpio";
-            else
-            astro_sign = "sagittarius";
-        }
-               
-        document.write(astro_sign);
-    }
+       })
