@@ -23,12 +23,20 @@ console.log(split)
 var submitBtn = document.querySelector("#button");
 // var dateRange = document.querySelector()
 
+
+
 console.log(input);
 
 var randomfact = document.querySelector('.randomfact')
 
 //     Btn.addEventListener('click', function () {
 
+var dayweekmonth=split[0];
+var daydayweekmonth=split[1];
+var daydayweekmonth1=split[2]
+console.log(dayweekmonth);
+console.log(daydayweekmonth);
+console.log(daydayweekmonth1);
 
 // horoscope gen aztro
 input.addEventListener('change', function () {
@@ -41,7 +49,7 @@ input.addEventListener('change', function () {
 
     })
          
-         .then(response =>response.json()) 
+        .then(response =>response.json()) 
              // var horoscopeValue = innerHTML
         .then(data => {
             console.log(data)
@@ -71,11 +79,20 @@ input.addEventListener('change', function () {
     // fun fact gen
     
  });
+
+ var dayweekmonth=split[0];
+var daydayweekmonth=split[1];
+var daydayweekmonth1=split[2]
+console.log(dayweekmonth);
+console.log(daydayweekmonth);
+console.log(daydayweekmonth1);
+
 // submitBtn.addEventListener('click', function () {    
 
 // // var value = ['year']['month']['day'];
 // });
 function zodiacSign(day, month)
+
     {
         let astro_sign="";
            
