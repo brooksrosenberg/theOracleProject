@@ -35,13 +35,8 @@ body{
 display:inline;
 }
 #button {
-<<<<<<< HEAD
-  position:relative;
-  text-align:center;
-=======
 
   text-align: center;
->>>>>>> 481daf24c4357f878097bbd65ff7fa388044f548
   width: 80px;
   padding: 4px;
   font-size: 13px;
