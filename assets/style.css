@@ -1,4 +1,3 @@
-
 .card {
   width: 75%;
   display: flex;
@@ -103,4 +102,73 @@ label {
   
 }
 
+
+.btn-styling{
+  background-color: darkorchid;
+  font-family: fantasy;
+  color: rgb(227, 232, 237);
+  cursor: pointer;
+  transition: all 0.5s;
+  opacity: 0.4;
+  border-radius: 12px;
+  
+}
+
+/* This adds a pressed effect on the button  */
+.btn-styling:active {
+  box-shadow: 0 5px #666;
+  
+}
+
+/* This adds a fadded effect on the button  */
+.btn-styling:hover {
+  opacity: 1;
+  
+}
+
+.body-styling{
+  font-family: fantasy;
+  /* color: rgb(14, 85, 147); */
+  color: rgb(235, 103, 242);
+}
+
+
+
+.footer-styling{
+  border: 5px;
+  border-color: darkorchid;
+  border-style:outset;
+  box-shadow: 0 0 5px crimson;
+  
+}
+
+.footer-p{
+  color: rgb(244, 224, 224);
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
 
