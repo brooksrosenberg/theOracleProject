@@ -4,7 +4,7 @@
 This is a horoscope application that allows users to check their horoscope, and what is compatible with their particular sign for that particular day. This application also displays a randomly generated fact of the day.
 
 ## Screenshot of Application
-![OracleProject](assets/images/oracleProjectScreenshot.png)
+![OracleProject](assets/images/OracleProjectScreenshot.png)
 This is our rendition of a Horoscope generator application that provides users with their horoscope based off their zodiac sign and provides a random fact of the day.
 
 
