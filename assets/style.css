@@ -10,7 +10,7 @@ header {
   width: 100%;
 }
 .jumbotron{
-  background-image: url("shootingstar.gif");
+  background-image: url("./images/shootingstar.gif");
    background-size: cover;
    background-repeat: no-repeat;
    color:aliceblue;
@@ -23,7 +23,7 @@ header {
    justify-content:start;
 }
 body{
-  background-image: url("shootingstar.gif");
+  background-image: url("./images/shootingstar.gif");
       background-size: cover;
    background-repeat: no-repeat;
    
@@ -90,7 +90,7 @@ label {
 }
 
 .footer{
-  background-image: url("shootingstar.gif");
+  background-image: url("./images/shootingstar.gif");
   background-size: cover;
   background-repeat: no-repeat;
   color: aliceblue;
