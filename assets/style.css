@@ -21,6 +21,7 @@ header {
    border-style:outset;
    box-shadow: 0 0 15px crimson;
    text-align: center;
+   justify-content:start;
 }
 body{
   background-image: url("shootingstar.gif");
@@ -98,5 +99,8 @@ label {
   padding: 35px;
   text-align: center;
   
+  justify-content:end ;
+  
 }
+
 
