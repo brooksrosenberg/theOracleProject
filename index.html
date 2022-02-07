@@ -4,104 +4,98 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Learn Your Birthday!</title>
+    <title>The OracleProject</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css" />
     <link rel="stylesheet" href="assets/style.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-   
 </head>
-
 <header>
     <!-- jumbotron -->
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4">Fluid jumbotron</h1>
-            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.
-            </p>
+            <h1 class="display-4 body-styling">Oracle Horoscope </h1>
+            <p class="lead body-styling">Learn your inner self today!
         </div>
     </div>
     <!-- end of jumbotron -->
 </header>
+<!-- rnadom fact -->
+<div class="body-container">
+    <span>
+        <h4 class="randomfact body-styling">Random Fact: </h4>
+    </span>
+    <span>
+        <h4 class="randomfact body-styling" id="random-fact"></h4>
+    </span>
+    <br />
 
+    <br />
 
-
-
-<label for="start">Start date:</label>
-<input
-  type="date"
-  id="start"
-  name="trip-start"
-  value="2018-07-22"
-  min="1922-01-01"
-  max="2022-12-31"
-/>
-
-<!-- <div class="container">
-    <div class="row">
-         datepicker -->
-      <!-- <div class="col-4">
-        <p>Date: <input type="text" id="datepicker" class="inputValue"></p>
-    </div> -->
-<!-- card -->
-<div class="input">
-   
-    <input type="submit" value="submit" class=button>
-<div>
-
-<div class="card1"> 
+    <!--input bars -->
+    <form>
+        <label for="start" class="body-styling">Day: </label>
+        <select name="Horoscope" id="days-options" class="btn-styling">
+            <option value="yesterday">Yesterday</option>
+            <option value="today">Today</option>
+            <option value="tomorrow">Tomorrow</option>
+        </select>
+        <label for="start" class="body-styling">Pick Your Star: </label>
+        <select name="Horoscope" id="stars-options" class="btn-styling ">
+            <option value="capricorn">Capricorn</option>
+            <option value="aquarius">Aquarius</option>
+            <option value="pisces">Pisces</option>
+            <option value="aries">Aries</option>
+            <option value="taurus">Taurus</option>
+            <option value="gemini">Gemini</option>
+            <option value="cancer">Cancer</option>
+            <option value="leo">Leo</option>
+            <option value="Virgo">Virgo</option>
+            <option value="libra">Libra</option>
+            <option value="scorpio">Scorpio</option>
+            <option value="sagittarius">Sagittarius</option>
+        </select>
+        <button id="search-button" class="listen btn-styling ">
+            Search
+        </button>
+    </form>
+    <!-- display -->
+    <div class="card1">
         <div>
-            <div class="horoscope">
-            <p class="color">Your favorite color: <span id="favcolor"></span></p>
-            <p class="sign"> Your zodiac sign: <span id="favsign"></span></p>
-            <p class="facts"> Facts: <span id="favfacts"></span> </p>
-            <p class="luckyNumber"> Your lucky number:<span id="favluckyNumber"></span> </p>
-            <p class="luckyTime"> Your lucky hour: <span id="favluckyTime"></span></p>
-            <p class="mood"> Your mood:<span id="favmood"></span> </p>
-                
+            <div class="horoscope body-styling">
+                <p class="color body-styling">Your favorite color: <span id="favColor"></span></p>
+                <p class="sign body-styling"> Most compatible sign: <span id="favSign"></span></p>
+                <p class="facts body-styling"> Facts: <span id="favfacts"></span> </p>
+                <p class="luckyNumber body-styling"> Your lucky number: <span id="favluckyNumber"></span> </p>
+                <p class="luckyTime body-styling"> Your lucky hour: <span id="favluckyTime"></span></p>
+                <p class="mood body-styling"> Your mood: <span id="favmood"></span> </p>
+                <p class="mood body-styling">Sign Range: <span id="signRange"></span></p>
+            </div>
         </div>
-</div>
-
-<div class="card2"> 
-        <div class="randomfunfact">
-            <p class="randomfact">Your random fact: <span id="randomfavfact"></span></p>
-        </div>         
-</div>
-
-
-<!-- <div class="col-8">
-        <img src="#" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-        </ul>
-        <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
     </div>
-  </div> -->
+    <!-- footer -->
+    <footer>
+        <div class="footer footer-styling">
+            <p class="footer-p"> &copy; Made by:
+                <a href="https://github.com/brooksrosenberg" target="_blank" class="footer-styling-a">Brooks,</a>
+                <a href="https://github.com/Shalah" target="_blank">Rim,</a>
+                <a href="https://github.com/AlexisGeorgiades" target="_blank">Alexis,</a>
+                <a href="https://github.com/skhangns" target="_blank">Soheab</a>
+            </p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
-
     <script>src = "https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js";
         integrity =
             "sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF";
         crossorigin = "anonymous";
     </script>
-
     <script src="assets/script.js"></script>
-</body>
+    </body>
 
 </html>

@@ -3,41 +3,37 @@
   display: flex;
   justify-content: right;
 }
-
 .the-body {
   display: flex;
 }
-
 header {
   width: 100%;
 }
-
 .jumbotron{
-  background-image: url("shootingstar.gif");
+  background-image: url("./images/shootingstar.gif");
    background-size: cover;
    background-repeat: no-repeat;
-   color: blueviolet;
+   color:aliceblue;
    text-shadow: 0 0 10px crimson;
    border: 5px;
    border-color: darkorchid;
    border-style:outset;
    box-shadow: 0 0 15px crimson;
+   text-align: center;
+   justify-content:start;
 }
-
 body{
-  background-image: url("shootingstar.gif");
+  background-image: url("./images/shootingstar.gif");
       background-size: cover;
    background-repeat: no-repeat;
+   
 }
-
 .input {
 display:inline;
 }
+#button {
 
-.button {
-
-  position:relative;
-  text-align:center;
+  text-align: center;
   width: 80px;
   padding: 4px;
   font-size: 13px;
@@ -47,26 +43,19 @@ display:inline;
   border: 2px solid darkslateblue;
   border-radius: 50px;
   transition: 1.5s;
-
 }
-
-
-.button:hover {
-
+#button:hover {
   color: rgb(68, 8, 8);
   cursor:default;
   background-color: violet;
-  box-shadow: 0 0 10px crimson;
-
 }
-
 label {
-
-  color:darkorchid;
-  text-shadow: 0 0 5px crimson;
+  color:aliceblue;
+  align-items: center;
+  text-shadow: 0 0 10px crimson;
+  
 }
-
-#start{ 
+#start{
   width: 130px;
   padding: 4px;
   font-size: 13px;
@@ -76,30 +65,110 @@ label {
   border: 2px solid darkslateblue;
   border-radius: 50px;
   transition: 1.5s;
+  text-align: center;
 }
-
 #start:hover{
-
   color: rgb(68, 8, 8);
   cursor:default;
   background-color: violet;
   box-shadow: 0 0 10px crimson;
 }
-
-.display-4, 
-.lead, 
+.display-4,
+.lead,
 .color,
- .sign, 
+ .sign,
  .facts,
-  .luckyNumber, 
-  .luckyTime, 
+  .luckyNumber,
+  .luckyTime,
   .mood,
   .randomfact
     {
-      position: relative;
       margin-top: 20px;
-      justify-content: flex-start;
-      color:darkorchid;
+      text-align: center;  
+      color:rgb(193, 190, 194);
       text-shadow:0 0 5px crimson;
+}
+
+.footer{
+  background-image: url("./images/shootingstar.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: aliceblue;
+  text-shadow: 0 0 5px crimson;
+  padding: 35px;
+  text-align: center;
+  
+  justify-content:end ;
+  
+}
+
+
+.btn-styling{
+  background-color: darkorchid;
+  font-family: fantasy;
+  color: rgb(227, 232, 237);
+  cursor: pointer;
+  transition: all 0.5s;
+  opacity: 0.4;
+  border-radius: 12px;
+  
+}
+
+/* This adds a pressed effect on the button  */
+.btn-styling:active {
+  box-shadow: 0 5px #666;
+  
+}
+
+/* This adds a fadded effect on the button  */
+.btn-styling:hover {
+  opacity: 1;
+  
+}
+
+.body-styling{
+  font-family: fantasy;
+  /* color: rgb(14, 85, 147); */
+  color: rgb(235, 103, 242);
+}
+
+
+
+.footer-styling{
+  border: 5px;
+  border-color: darkorchid;
+  border-style:outset;
+  box-shadow: 0 0 5px crimson;
+  
+}
+
+.footer-p{
+  color: rgb(244, 224, 224);
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
 
 }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
+
